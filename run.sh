@@ -10,21 +10,21 @@ cp ~/projects/dotfile/robbyrussell.zsh-theme /root/.oh-my-zsh/themes
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/vim-colorschemes
 vim +PluginInstall  +qall
-cd /root/.vim/bundle/YouCompleteMe/
+cd ~/.vim/bundle/YouCompleteMe/
 YCM_CORES=1 python ./install.py --clang-completer
 
 #theme
-sudo apt-get install unity-tweak-tool
+sudo apt-get -y install unity-tweak-tool
 
-sudo add-apt-repository ppa:snwh/pulp
+sudo add-apt-repository ppa:snwh/pulp -y
 # update repository info
 sudo apt-get update
 # install icon theme
-sudo apt-get install paper-icon-theme
+sudo apt-get -y install paper-icon-theme
 # install gtk theme
-sudo apt-get install paper-gtk-theme
+sudo apt-get -y install paper-gtk-theme
 # install cursor theme
-sudo apt-get install paper-cursor-theme
+sudo apt-get -y install paper-cursor-theme
 
 
 
